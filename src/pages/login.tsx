@@ -32,6 +32,8 @@ export const Login = () => {
 
       if (res.ok) {
         navigate("/");
+      } else {
+        alert("user Not Found");
       }
     } catch (err) {
       console.log(err);
