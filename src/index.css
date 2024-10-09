@@ -8,6 +8,8 @@
 
 body {
   font-family: "Ruda", sans-serif;
+}.input::placeholder{
+  color: #FFFFFF99
 }
 
 @tailwind base;

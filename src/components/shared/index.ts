@@ -6,3 +6,6 @@ export { default as FamousSection } from "./famous-section";
 export { default as PromotionSection } from "./promotion-section";
 export { default as PartnersSection } from "./partners-section";
 export { default as WhySection } from "./why-section";
+export { default as Advantages } from './advantages'
+export { default as Description } from './description'
+export { default as Follow } from './follow'
