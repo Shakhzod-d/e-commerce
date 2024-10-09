@@ -21,16 +21,24 @@ export const Register = () => {
   } = useForm<Register>();
 
   const submit = async (userData: Register) => {
+    console.log(userData);
+
     try {
       setLoading(true);
-      const res = await fetch("https://9303851354d5e8f0.mokky.dev/register", {
+      const res = await fetch("https://da5d82458f584cf7.mokky.dev/register", {
         method: "POST",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(userData),
+        body: JSON.stringify({
+          fullName: userData.fullName,
+          email: userData.email,
+          password: userData.password,
+        }),
       });
+      console.log(res);
+
       if (res.ok) {
         setSuccess(true);
       } else {
