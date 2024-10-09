@@ -11,10 +11,24 @@ import { Advantages, Description, Follow } from "../components/shared";
 import { Container } from "../components/ui/container";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+
+interface ProductProps {
+  title: string;
+  isUniq?: {
+    bg: string;
+    text: string;
+  };
+  desc: string;
+  price: string;
+  sizes: string[];
+  discountPrice?: string;
+  images: string[];
+}
+
 const Product = () => {
   const { id } = useParams();
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<ProductProps>();
 
   useEffect(() => {
     axios
@@ -72,13 +86,13 @@ const Product = () => {
             <div className="max-w-[450px] w-full flex flex-col items-center lg:mt-5 px-3">
               <h4 className="text-[14px] text-[#99969A] mb-7">{747474}</h4>
               <h3 className="text-2xl font-semibold text-center text-gray-500 my-5">
-                {data.title}
+                {data?.title}
               </h3>
               <h3 className="p-2 bg-[#F5C6D180] text-xl font-semibold">
-                {data.price}
+                {data?.price}
               </h3>
               <h4 className="text-[14px] text-red-500 mt-2 mb-5">
-                {data.desc}{" "}
+                {data?.desc}{" "}
               </h4>
               <h4 className="text-[14px] font-semibold text-center text-gray-500">
                 Доставим бесплатно!* Оплата долями от 5 225 ₽
@@ -117,10 +131,10 @@ const Product = () => {
           </div>
         </div>
         <div className="flex flex-col items-center w-max bg-red-900">
-          <h4 className="text-[14px] text-[#99969A]">{data.code}</h4>
-          <h3 className="text-3xl font-bold text-center">{data.comp}</h3>
+          <h4 className="text-[14px] text-[#99969A]">{data?.code}</h4>
+          <h3 className="text-3xl font-bold text-center">{data?.comp}</h3>
           <h3 className="p-2 bg-[#F5C6D180] text-xl font-semibold">
-            {data.price}
+            {data?.price}
           </h3>
         </div>
       </Container>

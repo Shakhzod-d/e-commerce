@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface ProductProps {
   title: string;
@@ -11,6 +12,7 @@ interface ProductProps {
   sizes: string[];
   discountPrice?: string;
   images: string[];
+  id: string;
 }
 
 const Product: FC<ProductProps> = ({
@@ -21,9 +23,10 @@ const Product: FC<ProductProps> = ({
   sizes,
   // discountPrice,
   images,
+  id,
 }) => {
   return (
-    <div className="max-w-[310px] h-[550px] relative">
+    <Link to={`/product/${id}`} className="max-w-[310px] h-[550px] relative">
       <div className="">
         <img className="w-full" src={images?.[0]} />
       </div>
@@ -53,7 +56,7 @@ const Product: FC<ProductProps> = ({
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -43,6 +43,7 @@ const FamousSection = () => {
               item?.xit && (
                 <SwiperSlide key={item.id}>
                   <Card
+                    id={item.id}
                     title={item.title}
                     desc={item.desc}
                     price={item.price}
