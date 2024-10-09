@@ -1,14 +1,17 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Login, Product, Register } from "./pages";
+import { Layout } from "./layout";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route index element={<Product />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Product />} />
+        </Route>
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </>
   );
