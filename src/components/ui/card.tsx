@@ -22,8 +22,6 @@ const Product: FC<ProductProps> = ({
   // discountPrice,
   images,
 }) => {
-  console.log(images);
-
   return (
     <div className="max-w-[310px] h-[550px] relative">
       <div className="">
