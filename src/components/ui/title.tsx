@@ -6,7 +6,7 @@ interface TitleProps {
     to: string;
     text: string;
   };
-  button: string;
+  button?: string;
 }
 
 const Title: FC<TitleProps> = ({ string, link, button }) => {

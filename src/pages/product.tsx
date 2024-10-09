@@ -23,6 +23,8 @@ interface ProductProps {
   sizes: string[];
   discountPrice?: string;
   images: string[];
+  code?: string;
+  comp: string;
 }
 
 const Product = () => {
