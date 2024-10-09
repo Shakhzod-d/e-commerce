@@ -1,10 +1,21 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap");
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Ruda", sans-serif;
+}.input::placeholder{
+  color: #FFFFFF99
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section {
+  @apply mb-5;
+}
