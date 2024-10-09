@@ -11,16 +11,16 @@ interface TitleProps {
 
 const Title: FC<TitleProps> = ({ string, link, button }) => {
   return (
-    <div className="flex items-center gap-5 mb-6">
-      <div className="flex-1 h-px bg-[#99969a]/25" />
-      <h2 className="text-[#221a25] text-[28px] font-black leading-[44px]">
+    <div className="flex items-center gap-5 mb-6 md:flex-col">
+      <div className="flex-1 h-px bg-[#99969a]/25 md:hidden" />
+      <h2 className="text-[#221a25] text-[28px] font-black leading-[44px] md:text-[16px]">
         {string}
       </h2>
 
       {link?.text && (
         <a
           href={link?.to}
-          className="text-[#55c380] text-[28px] font-normal leading-[44px]"
+          className="text-[#55c380] text-[28px] font-normal leading-[44px] md:hidden"
         >
           {link?.text}
         </a>
@@ -28,7 +28,7 @@ const Title: FC<TitleProps> = ({ string, link, button }) => {
       <div
         className={`${
           button ? "w-full max-w-[355px]" : "flex-1"
-        } h-px bg-[#99969a]/25`}
+        } h-px bg-[#99969a]/25 md:hidden`}
       />
 
       {button && (

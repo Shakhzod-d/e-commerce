@@ -151,10 +151,10 @@ export const Footer = () => {
               ...и мы будем оповещать вас <br /> о спецпредложениях и новинках
             </p>
             <div className="flex items-center gap-4 pb-1 border-b border-b-black mb-10">
-              <img src="../src/assets/icons/paper.svg" alt="paper" />
+              <img src="/assets/icons/paper.svg" alt="paper" />
               <p className="text-[14px] text-[#221A2599] mb-3">Ваша почта</p>
             </div>
-            <img src="../src/assets/icons/rates.png" alt="paper" />
+            <img src="/assets/icons/rates.png" alt="paper" />
           </div>
         </div>
       </div>
@@ -162,9 +162,9 @@ export const Footer = () => {
         <p>©2021 интернет-магазин детской функциональной одежды Диномама.ру</p>
         <div className="flex items-center gap-5 ">
           <p>Мы принимаем:</p>
-          <img src="../src/assets/icons/visa.svg" alt="" />
-          <img src="../src/assets/icons/mir.svg" alt="" />
-          <img src="../src/assets/icons/master.svg" alt="" />
+          <img src="/assets/icons/visa.svg" alt="" />
+          <img src="/assets/icons/mir.svg" alt="" />
+          <img src="/assets/icons/master.svg" alt="" />
         </div>
       </div>
     </footer>

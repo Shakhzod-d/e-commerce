@@ -6,7 +6,7 @@ const NewsSection = () => {
     <section>
       <Container>
         <Title string={"Наш блог"} />
-        <div className="flex gap-5 mb-4">
+        <div className="flex gap-5 mb-4 flex-wrap md:justify-center">
           {Array(3)
             .fill(0)
             .map((_, ind) => {

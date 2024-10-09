@@ -18,7 +18,7 @@ const NewsCard: FC<NewsCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex-col  gap-4 inline-flex *:text-start">
+    <div className="flex-col  gap-4 inline-flex *:text-start min-w-[320px]">
       <img className="" src={image} />
       <div className="flex-col  gap-2 flex">
         <div className="gap-2 flex">
