@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import heart from "../assets/heart.png";
+import heart from "/assets/heart.png";
 import { Navigation, Pagination, Scrollbar, Thumbs } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";

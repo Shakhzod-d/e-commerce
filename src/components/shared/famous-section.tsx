@@ -36,6 +36,21 @@ const FamousSection = () => {
           spaceBetween={50}
           slidesPerView={4}
           navigation
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              modules: [],
+            },
+            640: {
+              slidesPerView: 2, // 640px dan katta ekranda 2 slayder ko'rinadi
+            },
+            768: {
+              slidesPerView: 3, // 768px dan katta ekranda 3 slayder
+            },
+            1024: {
+              slidesPerView: 4, // 1024px dan katta ekranda 4 ta slayder
+            },
+          }}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
         >
           {data.map(

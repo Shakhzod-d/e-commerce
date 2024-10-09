@@ -9,8 +9,8 @@ export const Navbar = () => {
     "Помощь",
   ];
   return (
-    <header>
-      <div className="w-full px-[6xp] bg-[#F7F8F7] h-[32px] ">
+    <header className="md:hidden">
+      <div className="w-full px-[6xp] bg-[#F7F8F7] h-[32px] md:hidden">
         <div className="w-full max-w-[1340px] mx-auto flex justify-between items-center px-5">
           <div className="flex gap-4">
             <img src="/assets/icons/location.svg" alt="location" />
